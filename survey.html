@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Survey Form
+    </title>
+    <link href="css/survey.css" rel="StyleSheet">
+</head>
+<body>
+<header>
+<h1 id="title">Bengaluru Visit Survey</h1>
+<p id="description">Thank you for your time !</p>
+</header>
+<main>
+
+<form id="survey-form" action="" target="_blank" >
+
+    <fieldset id="fieldset">
+        <legend>Enter your personal favourites</legend>
+        <LABEL id="name-label">
+    First name:<br>
+    <input type="text" name=name" id="name" size="40" height="20" placeholder="name" required >
+            <br></LABEL>
+    State:<br>
+    <input type="text" name="state"size="40" height="20" >
+    <br>
+        <label id="email-label">
+        Email:<br>
+        <input type="email" name="email" id="email" size="40" height="20" placeholder="enter valid email" required >
+            <br></label>
+        <label id="number-label">
+        phone no:<br>
+
+        <input type="number" style="width: 340px" name="phone_no" id="number" size="40" height="20" placeholder="phone-number" required>
+            <br><br></label>
+
+
+    What gender are you?<br>
+
+    <input type="radio" name="gender" value="male" checked> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other<br><br>
+
+    <select style="width: 340px" name="mode" id="dropdown">
+        <option disabled selected value>
+            Select current mode
+        </option>
+        <option value="student">Student</option>
+        <option value="proffesional">Proffesional</option>
+        <option value="traveller">traveller</option>
+        <option value="nota">None of the above</option>
+    </select><br><br>
+        Favorite Food:<br>
+        <input type="text" name="food"size="40" height="20" >
+        <br>
+        Favorite Museum:<br>
+        <input type="text" name="museum"size="40" height="20" >
+        <br>
+        <br>
+        <select name="mall" style="width: 340px" >
+            <option disabled selected value>
+                Favorite Mall:
+            </option>
+            <option value="orion">Orion</option>
+            <option value="vegacity">Vaga CIty Mall</option>
+            <option value="forum">Forum Mall</option>
+            <option value="Inorbit">Inorbit Mall whitefield</option>
+        </select>
+            <br><br>
+
+
+<label id="area-label">
+    <textarea name="message" style="width: 340px" rows="10" cols="30" placeholder="Enter the other experience you would like to suggest."></textarea><br>
+    <br></label>
+        <label id="submit-label">
+        <input type="submit" style="width: 340px" onclick="alert('Thanks for submitting the form!')" id="submit" value="Submit1"><br>
+        </label>
+    </fieldset>
+
+</form>
+</main>
+</body>
+</html>
